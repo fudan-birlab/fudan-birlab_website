@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>fudan-birlab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/styles.css">>
+    </head>
+
+    <body>
+        <div id="bodyheader-placeholder"></div>
+        <script>
+            fetch('includes/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('bodyheader-placeholder').innerHTML = data);
+        </script>
+
+        <div class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="people.html">People</a>
+            <a href="publications.html">Publications</a>
+            <a href="research.html">Research</a>
+            <a href="joinus.html">Join us</a>
+            <a href="access.html">Access</a>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="main" style="padding-left: 180px;padding-right: 180px;">
+                <!-- <p style="color: gray;font-size:200%;text-align:center ">Fudan University</p>
+            <p style="color: gray;font-size:180%;text-align:center">Institute of Science and Technology for Brain-Inspired Intelligence</p>
+            <hr> -->
+            <p style="color: gray;font-size:180%;text-align:center">Brain-inspired Intelligent Robotics Lab @ Fudan University</p>
+            <hr> 
+                <p>“<i>What I cannot <strong>create</strong>, I do not <strong>understand</strong>.</i>”
+                    -- <b style="color: gray;">Richard Feynman</b></p>
+                
+                From the perspective of <strong>brain</strong>, <strong>intelligence</strong>, and <strong>robotics</strong>, 
+                we investigate the neural mechanisms underlying <strong>spatial cognition</strong> 
+                including spatial navigation, memory, learning, decision-making, and locomotion. 
+                By integrating computational, robotics, neural, and behavioral approaches, 
+                we aim to <strong>build robots</strong> with <strong>human-like spatial intelligence</strong>.
+
+                <!-- Our research aims to <strong>understand</strong> how the brain
+                empowers us with <strong>intelligence</strong> to freely
+                <strong>navigate</strong> the <strong>spatial</strong>
+                environment of everyday life, via a combination of <strong>computational</strong>,
+                <strong>neural</strong>, <strong>behavioral</strong>, and
+                <strong>robotics</strong> perspectives, and also build robots
+                with human-level <strong>spatial intelligence</strong> from our
+                brain. -->
+
+                <!-- <p>The lab is led by <strong>Taiping Zeng (Associate
+                        Professor)</strong>, 
+                        supervised by <a href="https://www.dcs.warwick.ac.uk/~feng/"
+                        target="_blank"><strong>Jianfeng Feng (Professor)</strong></a>
+                        within <strong>Institute of Science and Technology for
+                        Brain-Inspired Intelligence (ISTBI)</strong> at <strong>Fudan
+                        University</strong>.</p> -->
+                <p>The lab is led by <strong>Taiping Zeng</strong> 
+                    (Associate Professor) at the 
+                    <strong>Institute of Science and Technology 
+                        for Brain-Inspired Intelligence (ISTBI)</strong>, 
+                        <strong>Fudan University</strong>.</p>
+
+                <!-- <p>Much of our research focuses on <strong>spatial intelligence
+                        in brains and robotics</strong>, exploring questions:
+                    <i>How does our brain learn to map the world efficiently,
+                        robustly localize ourselves by recalling in memory, and
+                        quickly make decisions to navigate the world flexibly?</i>
+                </p> -->
+            </div>
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('includes/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+        </script>
+    </body>
+
+</html>

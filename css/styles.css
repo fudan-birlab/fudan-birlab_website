@@ -1,0 +1,227 @@
+/* Place your CSS styles in this file */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: white;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 50px;
+    color: black;
+}
+
+.header p {
+    font-size: 20px;
+    color: gray;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: scroll;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2);
+    border: 0.1px solid #BFBFBF;
+    background: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    padding: 30px 40px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.active {
+    background-color: whitesmoke;
+    color: gray;
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 20%;
+    /* IE10 */
+    flex: 20%;
+    background-color: white;
+    padding-top: 10px;  
+    padding-left: 50px;  
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 50px;
+}
+
+/* Footer */
+.footer {
+    padding: 80px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 10px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column_left {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    padding-left: 60px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column_right {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.people_row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Add padding BETWEEN each column */
+.people_row,
+.people_row>.people_column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.people_column {
+    float: left;
+    width: 33.3%;
+}
+
+/* Clear floats after rows */
+.people_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.people_content {
+    background-color: white;
+    padding: 30px;
+}
+
+/* publications vertical menu */
+.vertical-menu {
+    width: 100%;
+}
+
+.vertical-menu a {
+    background-color:white;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: whitesmoke;
+}
+
+.vertical-menu a.active {
+    background-color: lightgray;
+    color: white;
+}
+
+/* publications paper with two unequal columns */
+.column-paper {
+    float: left;
+    padding: 1px;
+  }
+.left {
+width: 16%;
+}
+
+.right {
+width: 84%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

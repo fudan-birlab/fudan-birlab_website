@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>fudan-birlab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/styles.css">>
+    </head>
+
+    <body>
+
+        <div id="bodyheader-placeholder"></div>
+        <script>
+            fetch('includes/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('bodyheader-placeholder').innerHTML = data);
+        </script>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="people.html">People</a>
+            <a href="publications.html">Publications</a>
+            <a href="research.html" class="active">Research</a>
+            <a href="joinus.html">Join us</a>
+            <a href="access.html">Access</a>
+        </div>
+
+        <div class="row">
+            <div class="main" style="padding-left: 180px;padding-right: 180px;">
+                <p style="font-size:200%;font-family:Copperplate;text-align:center">Research Overview</p>
+                <hr>
+
+                We link <strong>brain, intelligence, and robotics</strong>—deriving principles 
+                from neural and behavioral evidence, modeling them into theories 
+                and algorithms, and validating them in robotic tasks and scenarios.
+
+                <img src="img/research_img/overview_spatial.png"
+                    alt="Image" style="width:30%;display: block;margin-left:
+                    auto;margin-right: auto;">
+
+                <p style="font-size:120%;;text-align:left"><strong>Brain: neural & behavioral evidence</strong></p>
+                We investigate spatial cognition through multi-region neural recordings and behavioral evidence, uncovering how parallel pathways coordinate perception, memory, decision-making, and motor control during navigation.
+                <!-- Neural mechanisms of spatial cognition -->
+                <!-- We are trying to elucidate the neural basis of spatial navigation in the human brain using fMRI and in the mouse brain using fluorescence microscopy. By linking behaviors, brain connectivity and response, and neuronal activity together, it helps to understand how <i>what and where</i> visual pathways, prefrontal cortex and hippocampus support learning, memory, and decision-making during navigation. -->
+                <!-- We aim to provide evidence of the neural mechanisms underlying
+                <strong>spatial cognition</strong> in animals by analyzing
+                behavioral patterns, brain activity, and neuronal firing, which
+                are closely associated with perception, attention, learning,
+                memory, planning, and decision-making. -->
+
+                <!-- <img src="img/research_img/spatialfMRI.png" alt="Image" style="width:40%;display: block;margin-left: auto;margin-right: auto;"> -->
+                <p style="font-size:120%;;text-align:left"><strong>Intelligence: theories & models & algorithms</strong></p>
+
+                <!-- Theoretical/computational neuroscience -->
+
+                <!-- We aim to develop theories of spatial intelligence by replicating neuronal activity with minimal computational models, explaining representation data through theory to predict experimental outcomes, and ultimately building brain-inspired AI algorithms. -->
+                We aim to develop theories of intelligence by replicating neuronal activity with minimal computational models, modeling the whole mouse brain as a digital twin, explaining representation data through theory to predict experimental outcomes, and ultimately creating brain-inspired AI algorithms.
+
+                <!-- We holistically explain the spatial representation data with
+                <strong>theories</strong> to predict outcomes of experiments,
+                replicate the neuronal activity using a minimal <strong>computational
+                    model</strong> in the simplest possible way with our deepest
+                understanding, and understand flexible spatial behaviors in
+                complex scenarios using latent learning, reinforcement learning,
+                and unsupervised learning. -->
+
+                <!-- <p>To holistically explain the spatial representation data, we propose theories (geometry cells, globally coherent representations of space) to predict outcomes of our experiments according to the data and observation.</p>
+                <p>To replicate the neuronal activity, like place cells, grid cells, HD cells, we build a minimal computational model (conjunctive representations of space and movement, Bayesian attractor network) which can fit specific neuronal activity and explain a phenomenon in the simplest possible way with our deepest understanding.</p>     
+                <p>To flexibly behave and interact in complex environments, the brain builds, update, recall the cognitive map using latent learning, reinforcement learning, unsupervised learning in an intuitive way.</p>       -->
+                <p style="font-size:120%;;text-align:left"><strong>Robotics: tasks & platforms & scenarios</strong></p>
+                <!-- We build robots with <strong>human-level spatial intelligence</strong>
+                in dynamically changing scenarios, focusing on <strong><i>brain-inspired
+                        navigation, efficient motion planning, robust mapping
+                        and localization, and scalable low-cost brain-inspired
+                        robotic platforms</i></strong>. -->
+
+                We aim to build robots with human-level intelligence for dynamic environments—pioneering brain-inspired navigation, developing bioinspired robots, and enabling applications in rescue, inspection, and gardening.
+                <!-- <p>We explore the techniques that can help create robots with <strong>human-level spatial intelligence</strong>. From our brain, we build brain-inspired navigation algorithms (NeuroBayesSLAM, Compact Mapping).</p> 
+            <p>We also develop robust SLAM, efficient motion planning algorithms, and lightweight wheel and legged robotic system. Furthermore, a robotic system will be developed to be as a navigation platform investigating neural mechanisms of spatial cognition.</p>       -->
+            </div>
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('includes/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+        </script>
+    </body>
+
+</html>

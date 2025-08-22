@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>fudan-birlab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/styles.css">>
+    </head>
+
+    <body>
+
+        <div id="bodyheader-placeholder"></div>
+        <script>
+            fetch('includes/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('bodyheader-placeholder').innerHTML = data);
+        </script>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="people.html">People</a>
+            <a href="publications.html">Publications</a>
+            <a href="research.html">Research</a>
+            <a href="joinus.html" class="active">Join us</a>
+            <a href="access.html">Access</a>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="main" style="padding-left: 180px;padding-right: 180px;">
+                <!-- <p style="font-size:200%;font-family:Copperplate;text-align:center">JOIN US</p>
+            <hr> -->
+                <p style="font-size:150%;;text-align:left"><strong>For
+                        prospective graduate students</strong></p>
+
+                <p style="margin:0;">Standing at the intersection of
+                    brain, AI, and robotics, we are seeking candidates
+                    enrolled in a relevant subject such as:
+                    <ul style="margin:0;">
+                        <li>neuroscience, psychology,</li>
+                        <li>mathematics, statistics, physics, computer science,</li>
+                        <li>robotics, electrical/electronics, control, communication,
+                            mechanical engineering.</li>
+                    </ul>
+                </p>
+
+                <p style="font-size:150%;;text-align:left"><strong>For
+                        undergraduate students</strong></p>
+
+                <p style="font-size: 1.05rem; line-height: 1.6; margin-top: 1.5em;">
+                If you are interested in research on the brain, intelligence, and robotics—especially if you are a first- or second-year undergraduate student at Fudan University—please feel free to get in touch.                
+                </p>
+
+                <p style="font-size:150%;;text-align:left"><strong>For
+                        internship</strong></p>
+
+                <p style="font-size: 1.05rem; line-height: 1.6; margin-top: 1.5em;">
+                Please send me an email to ask about possibilities.
+                </p>
+
+                <!-- <p style="margin:0;">Anyone with the following experience will be a plus:
+            <ul style="margin:0;">
+                <li>electronic design contest, freescale cup intelligent car contest,</li>
+                <li>mathematical contest in modeling,</li>
+                <li>robocon, robomaster, mechanical innovation competition.</li>
+            </ul> -->
+                <!-- <p>interested in working on one of the following topics:</p>
+            <ul style="margin:0;">
+                <li>1. Understanding neural mechanisms of spatial navigation</li>
+                <li>2. Theoretical/Computational Neuroscience</li>
+                <li>3. robotics</li>
+            </ul> -->
+                <!-- <img src="img/underconstruction.jpg" alt="Image" style="width:60%;display: block;margin-left: auto;margin-right: auto;"> -->
+            </div>
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('includes/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+        </script>
+    </body>
+
+</html>
